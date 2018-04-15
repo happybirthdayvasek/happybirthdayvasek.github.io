@@ -130,7 +130,7 @@ header.masthead .overlay {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 100px 0 100px;
+  padding: 20rem 1.5rem 3rem 1.5rem;
   color: white;
 }
 
