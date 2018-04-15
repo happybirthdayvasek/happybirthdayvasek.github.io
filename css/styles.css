@@ -6,6 +6,7 @@ body {
 	/*text-align: center;*/
 	background: #fff;
 	color: #fff;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -15,7 +16,6 @@ h1 {
 }
 
 p, ul {
-	font-family: 'Open Sans', sans-serif;
 	margin: 0px;	
 }
 
@@ -25,6 +25,11 @@ p, ul {
 
 .intro, .footer {
 	font-weight: 300;
+}
+
+.small {
+	font-size: 90%;
+	line-height: 150%;
 }
 
 a {
