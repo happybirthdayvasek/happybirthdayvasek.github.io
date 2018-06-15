@@ -102,6 +102,10 @@ div .message {
 	}
 }
 
+.message-img {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .message-img {
     padding-right: 1.5rem;
@@ -237,50 +241,44 @@ header.masthead .post-heading .meta a {
  * Modal
  */
 
- /* Style the Image Used to Trigger the Modal */
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 100px 0px 100px 0px;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
 }
 
-/* Modal Content (Image) */
-.modal-content {
+/* Image in the modal */
+
+.modal-contents {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
 }
-
-/* Add Animation - Zoom in the Modal */
-.modal-content { 
+.modal-contents { 
     animation-name: zoom;
     animation-duration: 0.6s;
 }
-
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
+@media only screen and (max-width: 700px) {
+    .modal-contents {
+        width: 100%;
+    }
+}
 
-/* The Close Button */
+/* Close button */
+
 .close {
     position: absolute;
     top: 15px;
@@ -290,17 +288,9 @@ header.masthead .post-heading .meta a {
     font-weight: bold;
     transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
 }
